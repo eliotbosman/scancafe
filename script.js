@@ -1,12 +1,13 @@
 var grid = document.getElementsByClassName("grid")[0];
 var info = document.getElementsByClassName("info")[0];
+var skroll = document.getElementsByClassName("scroll")[0];
 
 function infopg() {
+    skroll.style.display = "none";
     grid.style.display = "none";
     info.style.display = "grid";
     info.style.animation = "fadein linear 1.2s";
 }
-
 function homepg() {
     info.style.display = "none";
     grid.style.display = "grid";
