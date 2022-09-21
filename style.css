@@ -1,0 +1,142 @@
+body {
+    margin: 2vw 6vh;
+    background: rgb(174, 173, 173);
+    font-family: 'ABC Maxi Round Edu';
+    animation: fadein 1.2s linear;
+}
+nav {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 0.25fr;
+    grid-auto-rows: 0.15fr;
+}
+
+.grid {
+    margin: 10vw 10vh;
+    display: grid;
+    grid-template-columns: 0.33fr 0.33fr 0.33fr;
+    grid-auto-rows: 0.33fr;
+    grid-gap: 2vw 2vh;
+}
+
+.info {
+    display: none;
+    text-align: left;
+    font-size: 15pt;
+}
+
+button {
+    margin-left: 75vw;
+    margin-top: 5vh;
+    padding: 2vw 2vh;
+    background: none;
+    border: dotted 5px black;
+    font-family: 'ABC Maxi Round Edu';
+
+}
+
+a, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: overline black 5px dotted;
+    transition: 1.2s all;
+}
+
+ol {
+    list-style: none;
+}
+
+li {
+    transform: skew(-25deg);
+}
+
+button:hover {
+    border: dashed 5px black;
+    text-decoration: overline 5px dashed;
+    border-radius: 5vw;
+    transition: 1s all;
+}
+
+#info:hover {
+    text-decoration: overline 2px dashed;
+    transition: 1s all;
+}
+
+.scroll {
+    right: 2.5vw;
+    position: fixed; /* Fixed/sticky position */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+}
+
+/* Portrait */
+@media screen and (max-width: 600px) {
+
+.scroll {
+    right: -25vw;
+    position: fixed; /* Fixed/sticky position */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+}
+    
+
+body { 
+    margin: 1vw 1vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 0.5fr;
+}
+
+.info {
+    display: none;
+}
+
+button {
+    margin: 25vw;
+}
+
+nav {
+    font-size: 12pt;
+}
+
+h1, small {
+    font-size: 12pt;
+}
+
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: 45pt;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ABC Maxi Round Edu';
+    src: url('/fonts/ABCMaxiRound-Light.woff2') format('woff2'),
+        url('/fonts/ABCMaxiRound-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
