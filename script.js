@@ -1,6 +1,6 @@
 var grid = document.getElementsByClassName("grid")[0];
 var info = document.getElementsByClassName("info")[0];
-var skroll = document.getElementsByClassName("scroll")[0];
+var skroll = document.getElementsByClassName("roller")[0];
 
 function infopg() {
     skroll.style.display = "none";
@@ -14,7 +14,7 @@ function homepg() {
     grid.style.animation = "fadein linear 1.2s";
 }
 
-function skroll() {
+function rulla() {
     window.scroll({
         top: 0,
         left: 0,
