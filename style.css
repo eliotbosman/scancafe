@@ -74,6 +74,17 @@ button:hover {
 
 /* Portrait */
 @media screen and (max-width: 600px) {
+    
+a, a:active {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: overline black 5px dotted;
+    transition: 1.2s all;
+}
+
 
 .scroll {
     right: -25vw;
