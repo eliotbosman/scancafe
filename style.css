@@ -65,7 +65,7 @@ button:hover {
     transition: 1s all;
 }
 
-.scroll {
+.roller {
     right: 2.5vw;
     position: fixed; /* Fixed/sticky position */
     cursor: pointer; /* Add a mouse pointer on hover */
@@ -86,7 +86,7 @@ a:hover {
 }
 
 
-.scroll {
+.roller {
     right: -25vw;
     position: fixed; /* Fixed/sticky position */
     cursor: pointer; /* Add a mouse pointer on hover */
